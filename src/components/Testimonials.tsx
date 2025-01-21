@@ -90,10 +90,10 @@ const Testimonials = () => {
           <div className="bg-white rounded-xl shadow-xl p-8 md:p-12">
             <Quote className="w-12 h-12 text-blue-600 mb-6" />
             <p className="text-xl text-gray-600 mb-4">
-              {testimonials[currentIndex].textPart1}
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart1}
             </p>
             <p className="text-xl text-gray-600 mb-8">
-              {testimonials[currentIndex].textPart2}
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart2}
             </p>
             <div className="flex items-center">
               <img 
@@ -106,12 +106,14 @@ const Testimonials = () => {
                 <p className="text-gray-500">{testimonials[currentIndex].position}</p>
               </div>
             </div>
-            <button 
-              onClick={() => openModal(testimonials[currentIndex])}
-              className="text-blue-600 hover:text-blue-700 mt-4"
-            >
-              Show More
-            </button>
+            {window.innerWidth < 768 && (
+              <button 
+                onClick={() => openModal(testimonials[currentIndex])}
+                className="text-blue-600 hover:text-blue-700 mt-4"
+              >
+                Show More
+              </button>
+            )}
           </div>
 
           <button
