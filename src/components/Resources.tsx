@@ -48,7 +48,7 @@ const Resources: React.FC = () => {
       icon: <BookOpen className="w-8 h-8 text-blue-600" />,
       title: "Latest Blog Posts",
       items: blogPosts.map(post => ({
-        label: post.title.substring(0, 5), // Show only the first 5 letters of the title
+        label: post.title.split(' ').slice(0, 5).join(' '), // Show only the first 5 words of the title
         onClick: () => setSelectedBlogPost(post)
       }))
     },
