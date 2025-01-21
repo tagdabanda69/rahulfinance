@@ -1,5 +1,5 @@
 import React from 'react';
-import  Modal from './Modal'; // Import the existing Modal component
+import Modal from './Modal'; // Import the existing Modal component
 
 interface TestimonialModalProps {
   isOpen: boolean;
@@ -8,7 +8,8 @@ interface TestimonialModalProps {
     image: string;
     author: string;
     position: string;
-    fullContent: string;
+    textPart1: string;
+    textPart2: string;
   };
 }
 
@@ -25,7 +26,8 @@ const TestimonialModal: React.FC<TestimonialModalProps> = ({ isOpen, onClose, te
         />
         <h3 className="text-2xl font-semibold ml-4">{testimonial.author}</h3>
       </div>
-      <p className="text-gray-600">{testimonial.fullContent}</p>
+      <p className="text-gray-600">{testimonial.textPart1}</p>
+      <p className="text-gray-600">{testimonial.textPart2}</p>
     </Modal>
   );
 };
