@@ -9,7 +9,7 @@ import TestimonialModal from './ui/TestimonialModal'; // Import the new modal co
 
 const Testimonials = () => {
   const testimonials = [
-    {
+{
       textPart1: "I am incredibly grateful for the guidance and expertise provided by Wealthvate in helping me navigate my mutual fund and investment journey. From the very beginning, they have demonstrated exceptional knowledge and a genuine commitment to understanding my financial goals.",
       textPart2: "Rahul took the time to explain complex investment strategies in a way that was easy to understand, empowering me to make informed decisions. What truly sets Wealthvate apart is professionalism, transparency, and unwavering dedication to clients. I always felt confident knowing my investments were in capable hands.",
 
@@ -92,7 +92,10 @@ const Testimonials = () => {
           <div className="bg-white rounded-xl shadow-xl p-8 md:p-12">
             <Quote className="w-12 h-12 text-blue-600 mb-6" />
             <p className="text-xl text-gray-600 mb-4">
-              {testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ')}
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart1}
+            </p>
+            <p className="text-xl text-gray-600 mb-8">
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart2}
             </p>
             <div className="flex items-center">
               <img 
@@ -136,3 +139,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
