@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../stores/authStore';
-import logo from '../assets/logo-png.png'; // Import the logo image
+import logo from '../assets/logo-transparent-png (1) (1)'; // Import the logo image
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
