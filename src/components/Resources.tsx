@@ -73,7 +73,7 @@ const Resources: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center"> {/* Center the items */}
           {resources.map((resource, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-6">
