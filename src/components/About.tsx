@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, BookOpen } from 'lucide-react';
+import profilePic from '../assets/Profile Pic.jpg'; // Import the profile image
 
 const About = () => {
   const achievements = [
@@ -22,13 +23,11 @@ const About = () => {
           <div className="relative">
             <div className="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
               <div className="flex justify-center">
-                <iframe 
-                  src="https://varshney3-my.sharepoint.com/personal/abhilash_varshney3_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=f32db1de-6f24-4629-9c33-0a13f861e82b"
-                  width="480" // Set a specific width
-                  height="510" // Set a specific height
-                  style={{ pointerEvents: 'none' }} // Disable interaction
-                  sandbox="allow-same-origin allow-scripts" // Restrict actions
-                ></iframe>
+                <img 
+                  src={profilePic} 
+                  alt="Profile" 
+                  className="w-full h-auto rounded-lg" // Use appropriate classes for responsiveness
+                />
               </div>
             </div>
           </div>
