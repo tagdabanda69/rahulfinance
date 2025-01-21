@@ -94,9 +94,6 @@ const Testimonials = () => {
             <p className="text-xl text-gray-600 mb-4">
               {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split('.')[0] : testimonials[currentIndex].textPart1}
             </p>
-            <p className="text-xl text-gray-600 mb-8">
-              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split('.')[0] : testimonials[currentIndex].textPart2}
-            </p>
             <div className="flex items-center">
               <img 
                 src={testimonials[currentIndex].image} 
