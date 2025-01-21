@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { Instagram } from 'lucide-react';
+import logo from '../assets/logo-png.png'; // Import the logo image
 
 const Footer = () => {
   return (
@@ -26,13 +27,11 @@ const Footer = () => {
           </div>
           
           <div>
-          <iframe 
-                src="https://varshney3-my.sharepoint.com/personal/abhilash_varshney3_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=282c1bdc-ebea-4333-adfd-2eb43a1b58a1"
-                width="180" 
-                height="180" 
-                style={{ borderRadius: '50%', pointerEvents: 'none' }} // Set border radius and disable interaction
-                sandbox="allow-same-origin allow-scripts" // Restrict actions
-              ></iframe>
+            <img 
+              src={logo} 
+              alt="WealthVate Logo" 
+              className="w-24 h-24 rounded-full" // Use appropriate classes for responsiveness
+            />
           </div>
         </div>
         
