@@ -25,19 +25,19 @@ const Resources: React.FC = () => {
   const [blogPosts] = useState<BlogPost[]>([
     {
       title: "The Necessity of Financial Consultancy in a Rapidly Evolving Digital Landscape",
-      content: "In today's fast-paced financial environment, the role of financial consultancy has become increasingly critical. As we enter 2025, the financial services sector is undergoing significant transformations driven by digital advancements and changing consumer expectations. Financial consultants are essential in guiding organizations through these changes, ensuring they adapt to new technologies and regulatory requirements.",
+      content: "In today's fast-paced financial environment, the role of financial consultancy has become increasingly critical.",
       created_at: new Date().toISOString(),
       profiles: { email: "WealthVate" }
     },
     {
       title: "Adapting to Financial Inclusion: The Role of Consultancy",
-      content: "As financial inclusion takes center stage in 2025, the demand for consultancy services that focus on equitable access to financial resources is growing. Financial consultants are uniquely positioned to assist institutions in developing strategies that cater to underserved populations.",
+      content: "As financial inclusion takes center stage in 2025, the demand for consultancy services is growing.",
       created_at: new Date().toISOString(),
       profiles: { email: "WealthVate" }
     },
     {
       title: "The Importance of Strategic Planning in Financial Consultancy",
-      content: "In an era characterized by uncertainty and rapid change, strategic planning is paramount for financial institutions. Consultants are essential in helping organizations formulate robust strategies that address both current challenges and future opportunities. Market Analysis and Forecasting: Consultants provide valuable insights into market trends, enabling organizations to make informed decisions about product offerings and service enhancements4. This foresight is crucial for staying ahead of competitors. Risk Management Frameworks: As geopolitical risks and regulatory scrutiny increase, financial consultants can assist firms in developing comprehensive risk management strategies that protect assets while ensuring compliance with evolving regulations9. Technology Integration: With the growing importance of AI and digital tools in finance, consultants can guide institutions on integrating these technologies into their operations effectively, enhancing efficiency and customer satisfaction",
+      content: "In an era characterized by uncertainty and rapid change, strategic planning is paramount for financial institutions.",
       created_at: new Date().toISOString(),
       profiles: { email: "WealthVate" }
     }
@@ -48,7 +48,7 @@ const Resources: React.FC = () => {
       icon: <BookOpen className="w-8 h-8 text-blue-600" />,
       title: "Latest Blog Posts",
       items: blogPosts.map(post => ({
-        label: post.title,
+        label: post.title.substring(0, 5), // Show only the first 5 letters of the title
         onClick: () => setSelectedBlogPost(post)
       }))
     },
