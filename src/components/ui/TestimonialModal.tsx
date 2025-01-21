@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal } from './Modal'; // Import the existing Modal component
+import  Modal from './Modal'; // Import the existing Modal component
 
 interface TestimonialModalProps {
   isOpen: boolean;
