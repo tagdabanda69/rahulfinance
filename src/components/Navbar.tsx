@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
               <iframe 
-                src="https://varshney3-my.sharepoint.com/personal/abhilash_varshney3_onmicrosoft_com/_layouts/15/embed.aspx?UniqueId=04e5320a-5584-4fcf-bc44-31c7f022e441"
+                src="https://varshney3-my.sharepoint.com/:i:/g/personal/abhilash_varshney3_onmicrosoft_com/EQoy5QSEVc9PvEQxx_Ai5EEBDD9kO2nzJngm_MqNzrrkWw?e=sfsh8m"
                 width="50" 
                 height="50" 
                 style={{ borderRadius: '50%', pointerEvents: 'none' }} // Set border radius and disable interaction
