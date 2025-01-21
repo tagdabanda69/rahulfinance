@@ -92,10 +92,10 @@ const Testimonials = () => {
           <div className="bg-white rounded-xl shadow-xl p-8 md:p-12">
             <Quote className="w-12 h-12 text-blue-600 mb-6" />
             <p className="text-xl text-gray-600 mb-4">
-              {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart1}
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split('.')[0] : testimonials[currentIndex].textPart1}
             </p>
             <p className="text-xl text-gray-600 mb-8">
-              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart2}
+              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split('.')[0] : testimonials[currentIndex].textPart2}
             </p>
             <div className="flex items-center">
               <img 
