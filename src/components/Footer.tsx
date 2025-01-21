@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
 import { Instagram } from 'lucide-react';
-import logo from '../assets/logo-png.png'; // Import the logo image
+import logo from '../assets/logo-transparent.png'; // Import the logo image
 
 const Footer = () => {
   return (
