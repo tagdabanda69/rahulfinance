@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../stores/authStore';
+import logo from '../assets/logo-png.png'; // Import the logo image
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,14 +42,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <iframe 
-                src="https://imgur.com/ckj9bwS"
-                width="50" 
-                height="50" 
-                style={{ borderRadius: '50%', pointerEvents: 'none' }} // Set border radius and disable interaction
-                sandbox="allow-same-origin allow-scripts" // Restrict actions
-              ></iframe> {/* Logo Image */}
-              <span className="ml-2 text-white text-xl font-bold">WealthVate</span> {/* Business Name */}
+              <img 
+                src={logo} 
+                alt="WealthVate Logo" 
+                className="w-12 h-12 rounded-full" // Use appropriate classes for responsiveness
+              />
+              <span className="ml-2 text-white text-xl font-bold">WealthVate</span>
             </Link>
           </div>
           
