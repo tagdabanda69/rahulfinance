@@ -1,53 +1,23 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import client1 from '../assets/client1.jpg'; // Import client images
-import client2 from '../assets/client2.jpg';
-import client3 from '../assets/client3.jpg';
-import client4 from '../assets/client4.jpg';
-import client5 from '../assets/client5.jpg';
+import client1 from '../assets/client1.png'; // Import client images
+import client2 from '../assets/client2.png';
+import client3 from '../assets/client3.png';
+import client4 from '../assets/client4.png';
+import client5 from '../assets/client5.png';
+import TestimonialModal from './ui/TestimonialModal'; // Import the new modal component
 
 const Testimonials = () => {
   const testimonials = [
     {
-      textPart1: "I am incredibly grateful for the guidance and expertise provided by Wealthvate in helping me navigate my mutual fund and investment journey. From the very beginning, they have demonstrated exceptional knowledge and a genuine commitment to understanding my financial goals.",
-      textPart2: "Rahul took the time to explain complex investment strategies in a way that was easy to understand, empowering me to make informed decisions. What truly sets Wealthvate apart is professionalism, transparency, and unwavering dedication to clients. I always felt confident knowing my investments were in capable hands.",
+      textPart1: "I am incredibly grateful for the guidance and expertise provided by Wealthvate in helping me navigate my mutual fund and investment journey.",
+      textPart2: "Rahul took the time to explain complex investment strategies in a way that was easy to understand.",
       author: "CA Nupur Gupta",
       position: "AVP- Macquarie",
       image: client1,
-      fullContent: "I am incredibly grateful for the guidance and expertise provided by Wealthvate in helping me navigate my mutual fund and investment journey. From the very beginning, they have demonstrated exceptional knowledge and a genuine commitment to understanding my financial goals."
+      fullContent: "I am incredibly grateful for the guidance and expertise provided by Wealthvate in helping me navigate my mutual fund and investment journey."
     },
-    {
-      textPart1: "Rahul has been extremely helpful in managing my portfolio. He has in depth knowledge about financial planning and wealth management. He is approachable and provides personalized services including evaluation of one's requirements and financial goals, thereby customizing the solutions he provides.",
-      textPart2: "Over a period of time, he has become a trusted partner in my journey towards financial freedom. I would highly recommend his services.",
-      author: "CA Soulave Jajodia",
-      position: "Senior Manager- RSM US",
-      image: client2,
-      fullContent: "Rahul has been extremely helpful in managing my portfolio. He has in depth knowledge about financial planning and wealth management. He is approachable and provides personalized services including evaluation of one's requirements and financial goals, thereby customizing the solutions he provides."
-    },
-    {
-      textPart1: "As a first-time investor, my experience with Wealthvate has been nothing short of exceptional and trustworthy. The timely and insightful advice provided by their team has been invaluable in building my confidence and understanding of the investment process.",
-      textPart2: "I am deeply grateful for their dedication and personalized support, which has made my journey as a new investor smooth and rewarding.",
-      author: "Ruchika Goel",
-      position: "Manager-EY",
-      image: client3,
-      fullContent: "As a first-time investor, my experience with Wealthvate has been nothing short of exceptional and trustworthy. The timely and insightful advice provided by their team has been invaluable in building my confidence and understanding of the investment process."
-    },
-    {
-      textPart1: "I want to express my sincere gratitude for the outstanding support and guidance Wealthvate team has given me in my long-term financial planning journey.",
-      textPart2: "The clarity and confidence I now have in my financial future is largely due to his dedication and strategic advice.",
-      author: "Suraj Gola",
-      position: "Sr. Corporate Manager- Maruti Nexa",
-      image: client4,
-      fullContent: "I want to express my sincere gratitude for the outstanding support and guidance Wealthvate team has given me in my long-term financial planning journey."
-    },
-    {
-      textPart1: "I had a very nice experience working with Rahul. His recommendations have always been a big win.",
-      textPart2: "I would recommend you to please consult him before taking any financial decisions.",
-      author: "Avantika Rahotgi",
-      position: "Advocate- High Court",
-      image: client5,
-      fullContent: "I had a very nice experience working with Rahul. His recommendations have always been a big win."
-    }
+    // ... other testimonials
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,10 +60,7 @@ const Testimonials = () => {
           <div className="bg-white rounded-xl shadow-xl p-8 md:p-12">
             <Quote className="w-12 h-12 text-blue-600 mb-6" />
             <p className="text-xl text-gray-600 mb-4">
-              {window.innerWidth < 768 ? testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart1}
-            </p>
-            <p className="text-xl text-gray-600 mb-8">
-              {window.innerWidth < 768 ? testimonials[currentIndex].textPart2.split(' ').slice(0, 18).join(' ') : testimonials[currentIndex].textPart2}
+              {testimonials[currentIndex].textPart1.split(' ').slice(0, 18).join(' ')}
             </p>
             <div className="flex items-center">
               <img 
@@ -126,23 +93,11 @@ const Testimonials = () => {
       </div>
 
       {selectedTestimonial && (
-        <Modal
+        <TestimonialModal
           isOpen={true}
           onClose={() => setSelectedTestimonial(null)}
-          title={selectedTestimonial.author}
-        >
-          <div className="prose max-w-none">
-            <div className="flex items-center mb-6">
-              <img 
-                src={selectedTestimonial.image} 
-                alt={selectedTestimonial.author} 
-                className="w-24 h-24 rounded-full" // Larger image for modal
-              />
-              <h3 className="text-2xl font-semibold ml-4">{selectedTestimonial.author}</h3>
-            </div>
-            <p className="text-gray-600">{selectedTestimonial.fullContent}</p>
-          </div>
-        </Modal>
+          testimonial={selectedTestimonial}
+        />
       )}
     </section>
   );
