@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import client1 from '../assets/client1.png'; // Import client images
-import client2 from '../assets/client2.png';
-import client3 from '../assets/client3.png';
-import client4 from '../assets/client4.png';
-import client5 from '../assets/client5.png';
+import client1 from '../assets/client1.jpg'; // Import client images
+import client2 from '../assets/client2.jpg';
+import client3 from '../assets/client3.jpg';
+import client4 from '../assets/client4.jpg';
+import client5 from '../assets/client5.jpg';
 
 const Testimonials = () => {
   const testimonials = [
