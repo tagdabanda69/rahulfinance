@@ -38,7 +38,7 @@ const About = () => {
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold mb-6">About Me</h2>
+            <h2 className="text-3xl font-bold mb-6">About Founder</h2>
             <p className="text-gray-600 mb-8">
               Meet CA Rahul Agarwal, the driving force behind Wealthvate success in the realm of wealth management. Rahul is a Chartered Accountant (CA) and Company Secretary (CS) by profession. He has also completed his graduation and post graduation in Commerce. Rahul has more than 10 years of experience in the field of Audit, Corporate Finance, Risk Management, Financial Analysis and Consulting. He has worked with MNC’s such as KPMG, EY, American Express and Reliance Jio at a Senior Manager level. Rahul is an active stock market investor and AMFI Registered Mutual Fund Advisor. He is currently working on bringing unbiased financial literacy to maximum people through Wealthvate.
             </p>
