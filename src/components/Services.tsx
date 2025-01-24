@@ -75,7 +75,7 @@ const Services = () => {
       fullContent: `Our PMS and AIFs service offers tailored investment solutions:
         • Offering PMS and AIF products.
         • Distributing products based on client requirements.
-        • Tailoring solutions to risk appetite for long-term wealth creation.
+        • Tailoring solutions to risk appetite for long-term wealth creation.`
     },
 
     {
