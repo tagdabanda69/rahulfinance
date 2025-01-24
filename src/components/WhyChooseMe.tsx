@@ -5,7 +5,7 @@ const WhyChooseMe = () => {
   const reasons = [
     {
       icon: <Shield className="w-12 h-12 text-blue-600" />,
-      title: "Trusted SEBI Registration",
+      title: "Trusted AMFI Registration",
       description: "Operating under strict regulatory compliance for your peace of mind.",
     },
     {
