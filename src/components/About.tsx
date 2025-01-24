@@ -1,18 +1,23 @@
 import React from 'react';
-import { Award, BookOpen } from 'lucide-react';
+import { Award, BookOpen, Users } from 'lucide-react';
 import profilePic from '../assets/Profile Pic.jpg'; // Import the profile image
 
 const About = () => {
   const achievements = [
     {
       icon: <Award className="w-8 h-8 text-blue-600" />,
-      title: "SEBI Registered",
-      description: "Licensed Investment Advisor"
+      title: "AMFI Registered",
+      description: "AMFI Registered Mutual Fund Distributor"
     },
     {
       icon: <BookOpen className="w-8 h-8 text-blue-600" />,
       title: "10+ Years Experience",
       description: "In Financial Markets"
+    },
+    {
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: "100+ Clients",
+      description: "Happy With Our Services"
     }
   ];
 
@@ -26,7 +31,7 @@ const About = () => {
                 <img 
                   src={profilePic} 
                   alt="Profile" 
-                  className="w-full h-auto rounded-lg" // Use appropriate classes for responsiveness
+                  className="w-full h-auto rounded-full" // Use appropriate classes for responsiveness
                 />
               </div>
             </div>
