@@ -52,7 +52,7 @@ const Services = () => {
       description: "Expert guidance for building a diversified stock portfolio to maximize returns.",
       fullContent: `Our Stock Investment service focuses on empowering clients with informed decisions:
         • Providing stock broking solutions through trading platform.
-        • Application for direct stock investing.
+        • Application for direct stock investing.`
     },
 
     {
