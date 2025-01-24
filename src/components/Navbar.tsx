@@ -47,7 +47,10 @@ const Navbar = () => {
                 alt="WealthVate Logo" 
                 className="w-12 h-12 rounded-full" // Use appropriate classes for responsiveness
               />
-              <span className="ml-2 text-white text-xl font-bold">WealthVate</span>
+              <div className="ml-2">
+                <span className="text-white text-xl font-bold">WealthVate</span>
+                <p className="text-white text-sm">Elevate Your Wealth</p>
+              </div>
             </Link>
           </div>
           
