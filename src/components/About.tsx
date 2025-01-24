@@ -31,7 +31,7 @@ const About = () => {
               <img 
                 src={profilePic} 
                 alt="Profile" 
-                style={{ width: 'auto', height: 'auto', maxWidth: '310px', borderRadius: '50%' }} // Inline styles for flexibility
+                style={{ width: 'auto', height: 'auto', maxWidth: '350px', borderRadius: '50%' }} // Inline styles for flexibility
               />
             </div>
           </div>
