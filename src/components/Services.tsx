@@ -51,12 +51,8 @@ const Services = () => {
       title: "Stock Investment Advisory",
       description: "Expert guidance for building a diversified stock portfolio to maximize returns.",
       fullContent: `Our Stock Investment service focuses on empowering clients with informed decisions:
-        • Comprehensive market analysis
-        • Individual stock selection based on research
-        • Diversification strategies to mitigate risk
-        • Regular performance reviews and adjustments
-        • Insights on market trends and economic indicators
-        • Risk management techniques tailored to client profiles`
+        • Providing stock broking solutions through trading platform.
+        • Application for direct stock investing.
     },
 
     {
@@ -77,12 +73,9 @@ const Services = () => {
       title: "PMS and AIFs Advisory",
       description: "Professional management of portfolios through Portfolio Management Services (PMS) and Alternative Investment Funds (AIFs).",
       fullContent: `Our PMS and AIFs service offers tailored investment solutions:
-        • Personalized investment strategies aligned with goals
-        • Active management by experienced fund managers
-        • Access to diverse asset classes including equities, debt, and real estate
-        • Detailed reporting and performance tracking
-        • Risk management frameworks to safeguard investments
-        • Regulatory compliance and transparency in operations`
+        • Offering PMS and AIF products.
+        • Distributing products based on client requirements.
+        • Tailoring solutions to risk appetite for long-term wealth creation.
     },
 
     {
