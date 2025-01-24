@@ -149,7 +149,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
+            <h3 className="text-2xl font-semibold mb-4">Connect With Me</h3>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/rahul-agarwal-68877a56?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " className="text-gray-600 hover:text-blue-600">
                 <Linkedin className="w-8 h-8" />
