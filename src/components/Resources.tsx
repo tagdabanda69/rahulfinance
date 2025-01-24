@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BookOpen, Calculator } from 'lucide-react';
 import SIPCalculator from './calculators/SIPCalculator';
 import RetirementCalculator from './calculators/RetirementCalculator';
-import TaxCalculator from './calculators/TaxCalculator';
 import Modal from './ui/Modal';
 
 interface BlogPost {
@@ -20,7 +19,6 @@ interface ResourceItem {
 const Resources: React.FC = () => {
   const [isSIPCalculatorOpen, setIsSIPCalculatorOpen] = useState(false);
   const [isRetirementCalculatorOpen, setIsRetirementCalculatorOpen] = useState(false);
-  const [isTaxCalculatorOpen, setIsTaxCalculatorOpen] = useState(false);
   const [selectedBlogPost, setSelectedBlogPost] = useState<BlogPost | null>(null);
   const [blogPosts] = useState<BlogPost[]>([
     {
@@ -57,8 +55,7 @@ const Resources: React.FC = () => {
       title: "Financial Calculators",
       items: [
         { label: "SIP Calculator", onClick: () => setIsSIPCalculatorOpen(true) },
-        { label: "Retirement Planning Calculator", onClick: () => setIsRetirementCalculatorOpen(true) },
-        { label: "Tax Calculator", onClick: () => setIsTaxCalculatorOpen(true) }
+        { label: "Retirement Planning Calculator", onClick: () => setIsRetirementCalculatorOpen(true) }
       ] as ResourceItem[] // Specify type for items
     }
   ];
@@ -105,10 +102,6 @@ const Resources: React.FC = () => {
       <RetirementCalculator
         isOpen={isRetirementCalculatorOpen}
         onClose={() => setIsRetirementCalculatorOpen(false)}
-      />
-      <TaxCalculator
-        isOpen={isTaxCalculatorOpen}
-        onClose={() => setIsTaxCalculatorOpen(false)}
       />
 
       {selectedBlogPost && (
