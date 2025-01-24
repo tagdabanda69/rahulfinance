@@ -49,7 +49,7 @@ const Navbar = () => {
               />
               <div className="ml-2">
                 <span className="text-white text-3xl font-bold">WealthVate</span>
-                <p className="text-white text-sm">Elevate Your Wealth</p>
+                <p className="text-white text-l">Elevate Your Wealth</p>
               </div>
             </Link>
           </div>
