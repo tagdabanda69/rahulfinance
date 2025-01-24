@@ -31,7 +31,7 @@ const About = () => {
                 <img 
                   src={profilePic} 
                   alt="Profile" 
-                  className="w-108 h-108 rounded-full" // Use appropriate classes for responsiveness
+                  className="w-81 h-81 rounded-full" // Use appropriate classes for responsiveness
                 />
               </div>
             </div>
