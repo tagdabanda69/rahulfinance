@@ -21,10 +21,10 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-5xl md:text-5xl font-bold leading-tight mb-6">
           Empowering Your<br />Financial Journey
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl">
+        <p className="text-xl md:text-1xl mb-8 max-w-2xl">
           Our mission is to provide the insights, tools, and expertise you need to turn your financial dreams into reality. Introducing India's First of its kind All-In-One Investment Platform to transform your Investment Journey.
         </p>
         <button 
