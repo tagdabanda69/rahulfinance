@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react'; // Restored Linkedin and Instagram
+import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +60,7 @@ const Contact = () => {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-2 border-gray-300 bg-white text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                   id="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-2 border-gray-300 bg-white text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                   id="phone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-2 border-gray-300 bg-white text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -102,7 +102,7 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-2 border-gray-300 bg-white text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   required
                 ></textarea>
               </div>
@@ -152,10 +152,10 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/rahul-agarwal-68877a56?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " className="text-gray-600 hover:text-blue-600">
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-8 h-8" />
               </a>
               <a href="https://www.instagram.com/financewithcarahul?igsh=cTQzeTBrcTJ5cWpu" className="text-gray-600 hover:text-blue-600">
-                <Instagram className="w-6 h-6" />
+                <Instagram className="w-8 h-8" />
               </a>
             </div>
 
