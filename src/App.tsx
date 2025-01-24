@@ -32,8 +32,8 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 const Home = () => (
   <>
     <Hero />
-    <About />
     <Services />
+    <About />
     <WhyChooseMe />
     <Testimonials />
     <Resources />
