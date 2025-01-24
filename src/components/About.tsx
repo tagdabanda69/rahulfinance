@@ -22,18 +22,16 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+   <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className=" overflow-hidden">
-              <div className="flex justify-center">
-                <img 
-                  src={profilePic} 
-                  alt="Profile" 
-                  className="w-49 h-49 rounded-full" // Use appropriate classes for responsiveness
-                />
-              </div>
+            <div className="flex justify-center">
+              <img 
+                src={profilePic} 
+                alt="Profile" 
+                style={{ width: 'auto', height: 'auto', maxWidth: '440px', borderRadius: '50%' }} // Inline styles for flexibility
+              />
             </div>
           </div>
           
