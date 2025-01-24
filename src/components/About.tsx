@@ -26,7 +26,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
+            <div className=" overflow-hidden">
               <div className="flex justify-center">
                 <img 
                   src={profilePic} 
