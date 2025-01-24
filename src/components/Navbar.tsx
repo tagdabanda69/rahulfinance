@@ -45,7 +45,7 @@ const Navbar = () => {
               <img 
                 src={logo} 
                 alt="WealthVate Logo" 
-                className="w-13 h-13 rounded-full" // Use appropriate classes for responsiveness
+                className="w-12 h-12 rounded-full" // Use appropriate classes for responsiveness
               />
               <div className="ml-2">
                 <span className="text-white text-3xl font-bold">WealthVate</span>
