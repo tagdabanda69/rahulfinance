@@ -25,6 +25,7 @@ const About = () => {
    <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden">
           <div className="relative">
             <div className="flex justify-center">
               <img 
@@ -33,6 +34,7 @@ const About = () => {
                 style={{ width: 'auto', height: 'auto', maxWidth: '440px', borderRadius: '50%' }} // Inline styles for flexibility
               />
             </div>
+          </div>
           </div>
           
           <div>
