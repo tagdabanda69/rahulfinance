@@ -12,7 +12,7 @@ const Footer = () => {
             <span className="text-2xl font-bold text-blue-500">WealthVate</span>
             <p className="mt-4 text-gray-400">
               Professional financial consulting services to help you achieve your financial goals.
-              SEBI Registered Investment Advisor.
+              AMFI Registered Investment Advisor.
             </p>
           </div>
           
