@@ -48,7 +48,7 @@ const Services = () => {
     },
     {
       icon: <HandCoins className="w-12 h-12 text-blue-600" />,
-      title: "Stock Investment Advisory",
+      title: "Stock Broking",
       description: "Expert guidance for building a diversified stock portfolio to maximize returns.",
       fullContent: `Our Stock Investment service focuses on empowering clients with informed decisions:
         • Providing stock broking solutions through trading platform.
@@ -70,7 +70,7 @@ const Services = () => {
 
     {
       icon: <Wallet className="w-12 h-12 text-blue-600" />,
-      title: "PMS and AIFs Advisory",
+      title: "PMS and AIFs",
       description: "Professional management of portfolios through Portfolio Management Services (PMS) and Alternative Investment Funds (AIFs).",
       fullContent: `Our PMS and AIFs service offers tailored investment solutions:
         • Offering PMS and AIF products.
